@@ -6,7 +6,7 @@ class CustomPage {
   static async build() {
     const browser = await puppeteer.launch({
       headless: true,
-      args: ['--no-sandbox']
+      args: ["--no-sandbox"],
     });
     const page = await browser.newPage();
     const customPage = new CustomPage(page);
@@ -57,7 +57,7 @@ class CustomPage {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(_data), 
+          body: JSON.stringify(_data),
         }).then((res) => res.json());
       },
       path,
