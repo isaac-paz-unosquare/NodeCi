@@ -57,7 +57,7 @@ class CustomPage {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(_data),
+          body: JSON.stringify(_data), 
         }).then((res) => res.json());
       },
       path,
