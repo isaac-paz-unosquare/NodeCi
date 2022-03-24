@@ -1,7 +1,3 @@
-const { expect } = require("chai");
-const { describe } = require("eslint/lib/rule-tester/rule-tester");
-const { get } = require("http");
-const { test } = require("ramda");
 const Page = require("./helpers/page");
 
 let page = undefined;
